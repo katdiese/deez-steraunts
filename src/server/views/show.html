@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+{% include "./nav.html" %}
+  <main>
+    <div class="row">
+      <div class="col-half restImage">
+        <img src="{{image}}">
+      </div>
+      <div class="col-half restDescip">
+        <p>{{name}}</p>
+        <p>{{cuisine}} cuisine</p>
+        <p>Located in {{city}}, {{state}}</p><br>
+        <p>{{description}}</p>
+        <a class="edit editEntry" href="/restaurants/{{id}}/edit">Edit</a>
+        <a class="delete editEntry" data-method="delete" href="/restaurants/{{id}}/delete">Delete</a>
+        <a class="addReview editEntry" href="/restaurants/{{id}}/review">Add Review</a>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-third">
+        <button class="addEmp">Add Employee</button>
+        <div class="employeeList">
+          <table>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Position</th>
+            <tr>
+              <td>Jane</td>
+              <td>Doe</td>
+              <td>Chef</td>
+            </tr>
+            <tr>
+              <td>Billy</td>
+              <td>Bob</td>
+              <td>Hostess</td>
+            </tr>
+            <tr>
+              <td>Michelle</td>
+              <td>Smith</td>
+              <td>Manager</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="col-two-thirds">
+      {% if data[0].review %}
+      {% for review in data %}
+        <div class="review">
+          <p>Date: {{review.date|date('Y-m-d')}} Reviewer: {{review.first_name}} {{review.reviewer.last_name}} Rating: {{review.rating}}</p>
+          <p class="reviewInfo">{{review.review}}</p>
+          <a href="/restaurants/{{review.res_id}}/reviews/{{review.review_id}}/delete">Delete Review</a>
+        </div>
+        {% endfor %}
+        {%else%}
+        <p>This restaurant hasn't been reviewed yet!</p>
+        {% endif %}
+      </div>
+      </div>
+    </div>
+
+
+  </main>
+
+
+
+
+{% endblock %}

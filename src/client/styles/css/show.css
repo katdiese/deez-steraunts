@@ -1,0 +1,48 @@
+main {
+  width: 90%;
+  margin: 5rem auto; }
+
+.col-half {
+  height: 50vh; }
+  .col-half img {
+    height: 100%; }
+
+.addEmp {
+  background: #9B6A6C;
+  color: #CEDFD9;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px; }
+
+table {
+  border: 2px solid #7FB069;
+  width: 85%; }
+  table th {
+    padding: 2px; }
+
+.editEntry {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: #CEDFD9; }
+  .editEntry:hover {
+    background: transparent;
+    text-decoration: none; }
+
+.edit {
+  background-color: #5F5449;
+  border: 4px dashed #5F5449; }
+
+.delete {
+  background-color: #7FB069;
+  border: 4px dashed #7FB069; }
+
+.addReview {
+  background-color: #9B6A6C;
+  border: 4px dashed #9B6A6C; }
+
+.review {
+  width: 100%;
+  border: 1px solid #7FB069;
+  margin: 10px 0;
+  height: 10rem; }

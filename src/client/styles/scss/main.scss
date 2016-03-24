@@ -1,0 +1,87 @@
+$red: #F87060;
+$brown: #5F5449;
+$white-ish: #CEDFD9;
+$green: #7FB069;
+$rose: #9B6A6C;
+$lightGrey: #bdbdbd;
+
+
+header {
+  background-color: $red;
+  position: relative;
+  width: 100%;
+
+  h1 {
+    margin-top: 0;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+  }
+}
+
+.foods {
+  width: 80%;
+  padding-left: 10%;
+  padding-right:10%;
+  margin: 2rem auto;
+  border: 1px solid black;
+  height: 100%;
+
+  img {
+    height: 12rem;
+  }
+}
+
+
+form {
+  position: relative;
+  width: 80%;
+  margin: 5rem auto;
+  border: 1px solid black;
+
+  .insideForm {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .create {
+    background-color: white;
+    position: absolute;
+    top: -10px;
+    left: 2%;
+  }
+
+  input[type="text"] {
+    display: block;
+    margin: 1rem 0;
+  }
+
+  button {
+    float: right;
+    margin: 10px;
+  }
+}
+
+.cancel {
+  color: blue;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+#loginButton {
+  max-width: 15%;
+  margin: auto;
+  text-align: center;
+  display: block;
+  margin-top: 10rem;
+}
+

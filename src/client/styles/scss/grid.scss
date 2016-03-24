@@ -1,0 +1,17 @@
+.row {
+  display: block;
+  width: 95%;
+  margin: auto;
+}
+.col-half {
+  float: left;
+  width: (100% / 2);
+}
+.col-third {
+  float: left;
+  width: (100% / 3);
+}
+.col-two-thirds {
+  float: left;
+  width: (100% / 3 * 2);
+}

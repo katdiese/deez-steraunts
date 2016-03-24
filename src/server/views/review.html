@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+  <header>
+    <h1>{{ title }}</h1>
+  </header>
+  {% include "./nav.html" %}
+  <main>
+    <form method="post">
+      <div class="insideForm">
+        <p class="create">Create Review</p>
+        <ul>
+          {% for error in errors %}
+            <li class="error">{{error}}</li>
+          {% endfor %}
+        </ul>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName">
+     <!--    <label for="date">Date</label><br>
+        <input name="date" type="date" id="date"><br><br> -->
+        <label for="rating">Rating</label>
+        <input type="radio" name="rating" value="1">
+        <input type="radio" name="rating" value="2">
+        <input type="radio" checked name="rating" value="3">
+        <input type="radio" name="rating" value="4">
+        <input type="radio" name="rating" value="5"><br><br>
+        <label for="review">Review</label><br>
+        <textarea name="review" rows="10" id="review" placeholder="Write your review here"></textarea>
+        <button type="submit" id="submit">Submit</button>
+        <a href="/restaurants" class="cancel">Cancel</button>
+      </div>
+    </form>
+  </main>
+
+
+
+
+
+
+
+{% endblock %}

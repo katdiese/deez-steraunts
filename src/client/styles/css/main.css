@@ -1,0 +1,57 @@
+header {
+  background-color: #F87060;
+  position: relative;
+  width: 100%; }
+  header h1 {
+    margin-top: 0;
+    font-weight: 100;
+    text-align: center; }
+  header a {
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 10px; }
+
+.foods {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 2rem auto;
+  border: 1px solid black;
+  height: 100%; }
+  .foods img {
+    height: 12rem; }
+
+form {
+  position: relative;
+  width: 80%;
+  margin: 5rem auto;
+  border: 1px solid black; }
+  form .insideForm {
+    width: 90%;
+    margin: 2rem auto; }
+  form .create {
+    background-color: white;
+    position: absolute;
+    top: -10px;
+    left: 2%; }
+  form input[type="text"] {
+    display: block;
+    margin: 1rem 0; }
+  form button {
+    float: right;
+    margin: 10px; }
+
+.cancel {
+  color: blue; }
+
+.error {
+  color: red;
+  font-weight: bold; }
+
+#loginButton {
+  max-width: 15%;
+  margin: auto;
+  text-align: center;
+  display: block;
+  margin-top: 10rem; }
